@@ -31,7 +31,14 @@ public class StringCalculatorTest {
     private Object[][] dataForTestingOutput() {
         return new Object[][]{
                 {"", 0},
-                {"1", 1}
+                {"1", 1},
+                {"1,2",3},
+                {"1,4",5},
+                {"1,2,3",6},
+                {"1,2,3,4",10},
+                {"1,1000000",1000001},
+                {"1,1000000",1000001},
+                {"1\n2,3",6}
         };
     }
 
