@@ -39,9 +39,9 @@ public class StringCalculatorTest {
     @Test
     public void shouldReturnProperOutputForGivenInput(String input,
                                                       int expectedResult) {
-        int result = testedObject.add("1");
+        int result = testedObject.add(input);
 
-        assertThat(result).isEqualTo(1);
+        assertThat(result).isEqualTo(expectedResult);
     }
 
 
